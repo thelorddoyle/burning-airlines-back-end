@@ -1,9 +1,9 @@
-class SecretsController < ApplicationController
+class FlightsController < ApplicationController
 
     skip_before_action :verify_authenticity_token, raise: false
 
     def index
-        headers['Access-Control-Allow-Origin'] = '*' # FIX CORS ERROR !!!
+        # headers['Access-Control-Allow-Origin'] = '*' # FIX CORS ERROR !!!
         render json: Flight.all
 
     end # index
