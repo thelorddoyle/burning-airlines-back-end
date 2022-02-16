@@ -37685,3 +37685,99 @@ Processing by FlightsController#show as HTML
 Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/" for ::1 at 2022-02-17 09:22:34 +1100
+  [1m[35m (8.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Phoebe/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Phoebe/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Phoebe/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/welcome/index.html.erb (25.0ms)
+Completed 200 OK in 49ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-17 09:22:46 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (21.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 172ms (Views: 38.5ms | ActiveRecord: 73.8ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-17 09:32:10 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (20.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 29ms (Views: 7.5ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/flights/16" for ::1 at 2022-02-17 09:32:14 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mFlight Load (16.7ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:14
+  [1m[36mAirplane Load (19.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:16
+  [1m[36mReservation Load (8.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 16]]
+  ↳ app/controllers/flights_controller.rb:18
+Completed 200 OK in 246ms (Views: 36.2ms | ActiveRecord: 126.4ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-17 09:32:16 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (0.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/flights/19" for ::1 at 2022-02-17 09:32:18 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mFlight Load (1.1ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:14
+  [1m[36mAirplane Load (17.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:16
+  [1m[36mReservation Load (0.7ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 19]]
+  ↳ app/controllers/flights_controller.rb:18
+Completed 200 OK in 27ms (Views: 2.1ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-17 09:32:20 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-17 09:32:26 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (14.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 19ms (Views: 4.0ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-17 09:33:05 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (5.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 261ms (Views: 35.4ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-17 09:33:07 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (4.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 8ms (Views: 2.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-17 09:34:11 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (1.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 34ms (Views: 24.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-17 09:40:27 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (3.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 3.3ms)
+
+
