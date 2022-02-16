@@ -24,7 +24,7 @@ columns_options = [2,4,6]
   airplane_array.push randomPlane.id
 end
 
-puts "Success! #{ Airplane.count } random airplanes created.".green
+puts "Success! #{ Airplane.count } random airplanes created. #{airplane_array.sample}".green
 
 print "Creating seed flights...".blue
 

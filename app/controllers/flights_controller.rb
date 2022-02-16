@@ -13,7 +13,7 @@ class FlightsController < ApplicationController
         headers['Access-Control-Allow-Origin'] = '*'
         @flight = Flight.find params[:id]
         @reservation = Reservation.all.where(flight_id: (params[:id]))
-        @plane = Airplane.find_by params[:airplane_id]
+        @plane = Airplane.find_by id:@flight.airplane_id
         response = {flight: @flight, reservation: @reservation, plane: @plane}
         render json: response
 
