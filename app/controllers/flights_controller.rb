@@ -20,14 +20,14 @@ class FlightsController < ApplicationController
     end
 
     # def create
-    #     secret = Flight.create content: params[:content]
-    # 
+    #     flight = Flight.create content: params[:content]
+    
     #     if flight.persisted?
     #        render json:flight
     #     else
     #        render json: {error: 'could not create flight'}, status: 422
     #     end
-    # 
+    
     # end # create
 
 end
