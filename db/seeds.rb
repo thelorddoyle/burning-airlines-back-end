@@ -71,8 +71,8 @@ reservation_array = []
 
   randomReservation.flight_id = flight_array.sample
   flightOfReservation = Flight.find_by id:randomReservation.flight_id
-  randomReservation.row = rand(Airplane.joins(:flights).find_by(id:flightOfReservation.airplane_id).rows)
-  randomReservation.column = rand(Airplane.joins(:flights).find_by(id:flightOfReservation.airplane_id).columns)
+  randomReservation.row = rand(Airplane.joins(:flights).find_by(id:flightOfReservation.airplane_id).rows)+1
+  randomReservation.column = rand(Airplane.joins(:flights).find_by(id:flightOfReservation.airplane_id).columns)+1
   randomReservation.user_id = user1.id
 
   randomReservation.save
