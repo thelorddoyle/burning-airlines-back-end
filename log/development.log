@@ -3711,6 +3711,7 @@ Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.0ms)
   [1m[36mReservation Load (4.7ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
 =======
 >>>>>>> 99769f45da767332f6edf147fc0f1883c7d8800a
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/main
 Started GET "/" for 127.0.0.1 at 2022-02-16 11:51:50 +1100
   [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -3733,6 +3734,39 @@ Started GET "/ws" for 127.0.0.1 at 2022-02-16 11:52:21 +1100
 ActionController::RoutingError (No route matches [GET] "/ws"):
   
 actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
+<<<<<<< HEAD
+Started GET "/ws" for ::1 at 2022-02-16 11:10:36 +1100
+Started GET "/" for ::1 at 2022-02-16 11:10:37 +1100
+  
+  
+ActiveRecord::NoDatabaseError (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "burning-airlines-back-end_development" does not exist
+):
+ActiveRecord::NoDatabaseError (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "burning-airlines-back-end_development" does not exist
+):
+  
+  
+activerecord (5.2.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.6.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.6.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.6.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> 02584520949ca5564f2f338abfc2f31496dfe064
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -3760,11 +3794,34 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/ws" for 127.0.0.1 at 2022-02-16 11:52:23 +1100
   
 ActionController::RoutingError (No route matches [GET] "/ws"):
   
 actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+=======
+activerecord (5.2.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.6.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.6.2) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.6.2) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.6.2) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+>>>>>>> 02584520949ca5564f2f338abfc2f31496dfe064
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -3792,6 +3849,7 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/ws" for 127.0.0.1 at 2022-02-16 11:52:27 +1100
   
 ActionController::RoutingError (No route matches [GET] "/ws"):
@@ -5674,11 +5732,263 @@ Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 10.1ms)
   [1m[36mReservation Update (0.5ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 2], ["column", 3], ["flight_id", 59], ["user_id", 6], ["id", 44]]
   ↳ db/seeds.rb:75
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+=======
+  [1m[35m (897.0ms)[0m  [1m[35mCREATE DATABASE "burning-airlines-back-end_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (365.2ms)[0m  [1m[35mCREATE DATABASE "burning-airlines-back-end_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (98.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (28.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2792473505784481050)[0m
+  ↳ bin/rails:4
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateAirplanes (20220215083230)
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (361.8ms)[0m  [1m[35mCREATE TABLE "airplanes" ("id" bigserial primary key, "name" character varying, "rows" integer, "columns" integer)[0m
+  ↳ db/migrate/20220215083230_create_airplanes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (21.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220215083230"]]
+  ↳ bin/rails:4
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateFlights (20220215083406)
+  [1m[35m (8.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (37.4ms)[0m  [1m[35mCREATE TABLE "flights" ("id" bigserial primary key, "seats" integer, "origin" text, "destination" text, "airplane_id" integer)[0m
+  ↳ db/migrate/20220215083406_create_flights.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220215083406"]]
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateReservations (20220215083448)
+  [1m[35m (21.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "reservations" ("id" bigserial primary key, "row" integer, "column" integer, "flight_id" integer, "user_id" integer)[0m
+  ↳ db/migrate/20220215083448_create_reservations.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220215083448"]]
+  ↳ bin/rails:4
+  [1m[35m (44.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20220215083519)
+  [1m[35m (16.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (50.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "is_admin" boolean)[0m
+  ↳ db/migrate/20220215083519_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (14.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220215083519"]]
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (19.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-02-16 00:12:26.354133"], ["updated_at", "2022-02-16 00:12:26.354133"]]
+  ↳ bin/rails:4
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2792473505784481050)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAirplane Load (19.6ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (1.7ms)[0m  [1m[32mINSERT INTO "airplanes" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mAirplane Update (4.9ms)[0m  [1m[33mUPDATE "airplanes" SET "name" = $1, "rows" = $2, "columns" = $3 WHERE "airplanes"."id" = $4[0m  [["name", "Boeing 737"], ["rows", 10], ["columns", 4], ["id", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (0.5ms)[0m  [1m[32mINSERT INTO "airplanes" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mAirplane Update (0.9ms)[0m  [1m[33mUPDATE "airplanes" SET "name" = $1, "rows" = $2, "columns" = $3 WHERE "airplanes"."id" = $4[0m  [["name", "De Havilland Comet"], ["rows", 10], ["columns", 4], ["id", 2]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (1.6ms)[0m  [1m[32mINSERT INTO "airplanes" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mAirplane Update (0.7ms)[0m  [1m[33mUPDATE "airplanes" SET "name" = $1, "rows" = $2, "columns" = $3 WHERE "airplanes"."id" = $4[0m  [["name", "Boeing 787"], ["rows", 10], ["columns", 4], ["id", 3]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "airplanes"[0m
+  ↳ db/seeds.rb:25
+  [1m[36mFlight Load (18.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (30.1ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (1.7ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Perth"], ["destination", "Paris"], ["airplane_id", 2], ["id", 1]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.6ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (0.6ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Sydney"], ["destination", "Washington DC"], ["airplane_id", 3], ["id", 2]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.6ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (1.2ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Sydney"], ["destination", "Washington DC"], ["airplane_id", 3], ["id", 3]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.6ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (0.6ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Brisbane"], ["destination", "Washington DC"], ["airplane_id", 3], ["id", 4]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.4ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (1.5ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Perth"], ["destination", "Birmingham"], ["airplane_id", 2], ["id", 5]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights"[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (21.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Create (4.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "is_admin") VALUES ($1, $2) RETURNING "id"[0m  [["name", "admin"], ["is_admin", true]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:57
+  [1m[36mReservation Load (20.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (8.1ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.8ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 1], ["column", 2], ["flight_id", 3], ["user_id", 1], ["id", 1]]
+  ↳ db/seeds.rb:75
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.6ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (1.1ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 8], ["column", 3], ["flight_id", 2], ["user_id", 1], ["id", 2]]
+  ↳ db/seeds.rb:75
+  [1m[35m (24.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.9ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (1.0ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 4], ["column", 1], ["flight_id", 4], ["user_id", 1], ["id", 3]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (7.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.5ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.6ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 9], ["column", 3], ["flight_id", 5], ["user_id", 1], ["id", 4]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (1.0ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (1.8ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 5], ["column", 4], ["flight_id", 5], ["user_id", 1], ["id", 5]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.5ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.7ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 10], ["column", 2], ["flight_id", 5], ["user_id", 1], ["id", 6]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+>>>>>>> 02584520949ca5564f2f338abfc2f31496dfe064
   ↳ db/seeds.rb:75
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:68
   [1m[36mReservation Create (0.4ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
   ↳ db/seeds.rb:68
+<<<<<<< HEAD
   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:68
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
@@ -5708,11 +6018,43 @@ Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 10.1ms)
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:75
   [1m[36mReservation Update (0.3ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 5], ["column", 4], ["flight_id", 58], ["user_id", 6], ["id", 47]]
+=======
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.8ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 4], ["column", 3], ["flight_id", 1], ["user_id", 1], ["id", 7]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.6ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (12.1ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 4], ["column", 4], ["flight_id", 2], ["user_id", 1], ["id", 8]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.8ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.8ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 1], ["column", 4], ["flight_id", 1], ["user_id", 1], ["id", 9]]
+>>>>>>> 02584520949ca5564f2f338abfc2f31496dfe064
   ↳ db/seeds.rb:75
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:75
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:68
+<<<<<<< HEAD
   [1m[36mReservation Create (0.3ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
   ↳ db/seeds.rb:68
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
@@ -5725,10 +6067,13 @@ Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 10.1ms)
   ↳ db/seeds.rb:75
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:68
+=======
+>>>>>>> 02584520949ca5564f2f338abfc2f31496dfe064
   [1m[36mReservation Create (0.5ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
   ↳ db/seeds.rb:68
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:68
+<<<<<<< HEAD
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   ↳ db/seeds.rb:75
   [1m[36mReservation Update (0.3ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 4], ["column", 4], ["flight_id", 61], ["user_id", 6], ["id", 49]]
@@ -5757,3 +6102,1034 @@ Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 10.1ms)
   [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 8]]
   [1m[36mReservation Load (0.4ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
   [1m[36mReservation Load (0.6ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 58]]
+=======
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (1.8ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 1], ["column", 4], ["flight_id", 4], ["user_id", 1], ["id", 10]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations"[0m
+  ↳ db/seeds.rb:81
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2792473505784481050)[0m
+  ↳ bin/rails:4
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (3.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2792473505784481050)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for ::1 at 2022-02-16 11:13:09 +1100
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Phoebe/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/Phoebe/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Phoebe/.rvm/gems/ruby-2.7.0/gems/railties-5.2.6.2/lib/rails/templates/rails/welcome/index.html.erb (10.5ms)
+Completed 200 OK in 144ms (Views: 93.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:13:18 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (4.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 170ms (Views: 56.7ms | ActiveRecord: 42.9ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:15:45 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (87.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 141ms (Views: 49.1ms | ActiveRecord: 87.6ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:17:18 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (40.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 105ms (Views: 59.0ms | ActiveRecord: 40.2ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:18:04 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (2.8ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 68ms (Views: 31.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:18:08 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (78.8ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 83ms (Views: 3.4ms | ActiveRecord: 78.8ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:18:28 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (200.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 203ms (Views: 3.0ms | ActiveRecord: 200.0ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:19:13 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (107.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 145ms (Views: 34.8ms | ActiveRecord: 107.1ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:19:24 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (15.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 30ms (Views: 13.9ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:19:51 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (0.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:21:04 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (55.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 183ms (Views: 123.5ms | ActiveRecord: 55.0ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:21:09 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (72.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 84ms (Views: 10.8ms | ActiveRecord: 72.6ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:21:33 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (12.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 31ms (Views: 18.1ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:21:55 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (11.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 43ms (Views: 27.5ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:22:43 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (1.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 130ms (Views: 120.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:22:50 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (57.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 72ms (Views: 13.0ms | ActiveRecord: 57.5ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:24:27 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (15.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 150ms (Views: 132.1ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:24:44 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (190.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 212ms (Views: 21.2ms | ActiveRecord: 190.3ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:24:58 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (62.8ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 135ms (Views: 48.6ms | ActiveRecord: 62.8ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:27:26 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (78.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 118ms (Views: 33.7ms | ActiveRecord: 78.9ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:27:35 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (36.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 64ms (Views: 26.7ms | ActiveRecord: 36.6ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:28:20 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (4.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 134ms (Views: 125.0ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:28:46 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (12.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 127ms (Views: 108.1ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:28:49 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (217.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 242ms (Views: 24.6ms | ActiveRecord: 217.0ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:29:18 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (426.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 445ms (Views: 17.0ms | ActiveRecord: 426.3ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:32:53 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (77.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 156ms (Views: 74.0ms | ActiveRecord: 77.9ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:33:19 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (127.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 155ms (Views: 26.7ms | ActiveRecord: 127.6ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:35:07 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (17.7ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 84ms (Views: 57.7ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:35:25 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (25.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 111ms (Views: 79.6ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:39:35 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (4.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 92ms (Views: 69.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:39:48 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (162.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 220ms (Views: 38.1ms | ActiveRecord: 162.6ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:40:53 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (3.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 64ms (Views: 57.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:40:56 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (32.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 40ms (Views: 7.1ms | ActiveRecord: 32.1ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:41:09 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (44.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 81ms (Views: 36.1ms | ActiveRecord: 44.5ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:42:16 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (14.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 80ms (Views: 60.8ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:43:21 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (4.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 55ms (Views: 49.8ms | ActiveRecord: 4.5ms)
+
+
+  [1m[35m (6.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAirplane Load (15.2ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (6.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Destroy (28.3ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:5
+  [1m[35m (15.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Destroy (2.7ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (6.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Destroy (2.7ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (7.4ms)[0m  [1m[32mINSERT INTO "airplanes" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mAirplane Update (6.6ms)[0m  [1m[33mUPDATE "airplanes" SET "name" = $1, "rows" = $2, "columns" = $3 WHERE "airplanes"."id" = $4[0m  [["name", "Boeing 737"], ["rows", 10], ["columns", 4], ["id", 4]]
+  ↳ db/seeds.rb:20
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (0.5ms)[0m  [1m[32mINSERT INTO "airplanes" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mAirplane Update (0.6ms)[0m  [1m[33mUPDATE "airplanes" SET "name" = $1, "rows" = $2, "columns" = $3 WHERE "airplanes"."id" = $4[0m  [["name", "Douglas DC-3"], ["rows", 10], ["columns", 4], ["id", 5]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (12.5ms)[0m  [1m[32mINSERT INTO "airplanes" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mAirplane Update (0.8ms)[0m  [1m[33mUPDATE "airplanes" SET "name" = $1, "rows" = $2, "columns" = $3 WHERE "airplanes"."id" = $4[0m  [["name", "De Havilland Comet"], ["rows", 10], ["columns", 4], ["id", 6]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "airplanes"[0m
+  ↳ db/seeds.rb:25
+  [1m[36mFlight Load (28.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mFlight Destroy (2.1ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:29
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mFlight Destroy (0.8ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mFlight Destroy (3.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:29
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mFlight Destroy (0.6ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mFlight Destroy (0.9ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.8ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (0.8ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Sydney"], ["destination", "Beirut"], ["airplane_id", 4], ["id", 6]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.4ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (1.0ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Canberra"], ["destination", "Beirut"], ["airplane_id", 4], ["id", 7]]
+  ↳ db/seeds.rb:44
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.6ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (1.7ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Melbourne"], ["destination", "Washington DC"], ["airplane_id", 6], ["id", 8]]
+  ↳ db/seeds.rb:44
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (2.6ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (1.8ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Canberra"], ["destination", "Washington DC"], ["airplane_id", 4], ["id", 9]]
+  ↳ db/seeds.rb:44
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.6ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (5.4ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Melbourne"], ["destination", "Birmingham"], ["airplane_id", 6], ["id", 10]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights"[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:53
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "is_admin") VALUES ($1, $2) RETURNING "id"[0m  [["name", "admin"], ["is_admin", true]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:57
+  [1m[36mReservation Load (2.3ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.7ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.7ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.9ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.8ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:61
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (1.3ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.7ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.6ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.7ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:61
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (1.1ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.7ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.6ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 4], ["column", 1], ["flight_id", 8], ["user_id", 2], ["id", 11]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (1.7ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.5ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 1], ["column", 2], ["flight_id", 10], ["user_id", 2], ["id", 12]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (1.9ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (1.0ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 5], ["column", 3], ["flight_id", 7], ["user_id", 2], ["id", 13]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.6ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.7ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 9], ["column", 3], ["flight_id", 7], ["user_id", 2], ["id", 14]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.5ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.9ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 10], ["column", 4], ["flight_id", 9], ["user_id", 2], ["id", 15]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (1.4ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (1.0ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 2], ["column", 4], ["flight_id", 8], ["user_id", 2], ["id", 16]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.5ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (1.1ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 10], ["column", 2], ["flight_id", 8], ["user_id", 2], ["id", 17]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+=======
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mAirplane Load (1.0ms)[0m  [1m[34mSELECT "airplanes".* FROM "airplanes"[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Destroy (0.8ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:5
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mAirplane Destroy (0.3ms)[0m  [1m[31mDELETE FROM "airplanes" WHERE "airplanes"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (1.0ms)[0m  [1m[32mINSERT INTO "airplanes" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mAirplane Update (0.3ms)[0m  [1m[33mUPDATE "airplanes" SET "name" = $1, "rows" = $2, "columns" = $3 WHERE "airplanes"."id" = $4[0m  [["name", "Boeing 737"], ["rows", 10], ["columns", 4], ["id", 9]]
+  ↳ db/seeds.rb:20
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (0.7ms)[0m  [1m[32mINSERT INTO "airplanes" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mAirplane Update (1.0ms)[0m  [1m[33mUPDATE "airplanes" SET "name" = $1, "rows" = $2, "columns" = $3 WHERE "airplanes"."id" = $4[0m  [["name", "Airbus A380"], ["rows", 10], ["columns", 4], ["id", 10]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAirplane Create (0.3ms)[0m  [1m[32mINSERT INTO "airplanes" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mAirplane Update (0.3ms)[0m  [1m[33mUPDATE "airplanes" SET "name" = $1, "rows" = $2, "columns" = $3 WHERE "airplanes"."id" = $4[0m  [["name", "De Havilland Comet"], ["rows", 10], ["columns", 4], ["id", 11]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "airplanes"[0m
+  ↳ db/seeds.rb:25
+  [1m[36mFlight Load (2.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mFlight Destroy (2.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mFlight Destroy (0.4ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mFlight Destroy (0.9ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mFlight Destroy (0.3ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mFlight Destroy (0.2ms)[0m  [1m[31mDELETE FROM "flights" WHERE "flights"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (1.4ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (0.5ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Sydney"], ["destination", "Paris"], ["airplane_id", 11], ["id", 6]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.3ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (0.5ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Perth"], ["destination", "Paris"], ["airplane_id", 11], ["id", 7]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.2ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (0.4ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Brisbane"], ["destination", "Berlin"], ["airplane_id", 11], ["id", 8]]
+  ↳ db/seeds.rb:44
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.4ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (0.5ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Melbourne"], ["destination", "Paris"], ["airplane_id", 11], ["id", 9]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mFlight Create (0.3ms)[0m  [1m[32mINSERT INTO "flights" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mFlight Update (0.6ms)[0m  [1m[33mUPDATE "flights" SET "seats" = $1, "origin" = $2, "destination" = $3, "airplane_id" = $4 WHERE "flights"."id" = $5[0m  [["seats", 40], ["origin", "Perth"], ["destination", "Beirut"], ["airplane_id", 9], ["id", 10]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights"[0m
+  ↳ db/seeds.rb:50
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "is_admin") VALUES ($1, $2) RETURNING "id"[0m  [["name", "admin"], ["is_admin", true]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:57
+  [1m[36mReservation Load (1.5ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations"[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.7ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:61
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:61
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.8ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.2ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:61
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.7ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mReservation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reservations" WHERE "reservations"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.8ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.6ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 6], ["column", 3], ["flight_id", 7], ["user_id", 3], ["id", 11]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.3ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.8ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 7], ["column", 4], ["flight_id", 10], ["user_id", 3], ["id", 12]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.3ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.4ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 4], ["column", 2], ["flight_id", 10], ["user_id", 3], ["id", 13]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (3.0ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (2.1ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 4], ["column", 4], ["flight_id", 6], ["user_id", 3], ["id", 14]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.4ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 10], ["column", 1], ["flight_id", 10], ["user_id", 3], ["id", 15]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.3ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 4], ["column", 4], ["flight_id", 6], ["user_id", 3], ["id", 16]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.6ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 7], ["column", 3], ["flight_id", 6], ["user_id", 3], ["id", 17]]
+  ↳ db/seeds.rb:75
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+>>>>>>> 4b82c82e27d18476219f7da0c18a2ed5364a2e41
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.4ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+<<<<<<< HEAD
+  [1m[36mReservation Update (0.8ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 10], ["column", 1], ["flight_id", 8], ["user_id", 2], ["id", 18]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.6ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.8ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 10], ["column", 1], ["flight_id", 9], ["user_id", 2], ["id", 19]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.7ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (1.6ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 1], ["column", 4], ["flight_id", 10], ["user_id", 2], ["id", 20]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations"[0m
+  ↳ db/seeds.rb:81
+Started GET "/flights" for ::1 at 2022-02-16 11:47:33 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (8.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 56ms (Views: 43.6ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:47:52 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (71.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 105ms (Views: 32.5ms | ActiveRecord: 71.9ms)
+
+
+Started GET "/flights" for ::1 at 2022-02-16 11:48:00 +1100
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 38ms (Views: 31.3ms | ActiveRecord: 1.0ms)
+
+
+=======
+  [1m[36mReservation Update (1.4ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 9], ["column", 2], ["flight_id", 6], ["user_id", 3], ["id", 18]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.3ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 8], ["column", 3], ["flight_id", 8], ["user_id", 3], ["id", 19]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mReservation Create (0.2ms)[0m  [1m[32mINSERT INTO "reservations" DEFAULT VALUES RETURNING "id"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:75
+  [1m[36mReservation Update (0.6ms)[0m  [1m[33mUPDATE "reservations" SET "row" = $1, "column" = $2, "flight_id" = $3, "user_id" = $4 WHERE "reservations"."id" = $5[0m  [["row", 2], ["column", 1], ["flight_id", 8], ["user_id", 3], ["id", 20]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations"[0m
+  ↳ db/seeds.rb:81
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mFlight Load (0.7ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mReservation Load (1.7ms)[0m  [1m[34mSELECT  "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1 LIMIT $2[0m  [["flight_id", 7], ["LIMIT", 1]]
+  [1m[36mFlight Load (0.6ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mAirplane Load (3.6ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mFlight Load (1.8ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mReservation Load (0.7ms)[0m  [1m[34mSELECT "reservations".* FROM "reservations" WHERE "reservations"."flight_id" = $1[0m  [["flight_id", 7]]
+>>>>>>> 4b82c82e27d18476219f7da0c18a2ed5364a2e41
+Started GET "/flights" for ::1 at 2022-02-16 16:56:01 +1100
+  [1m[35m (7.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Phoebe/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
+Processing by FlightsController#index as HTML
+  [1m[36mFlight Load (24.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights"[0m
+  ↳ app/controllers/flights_controller.rb:7
+Completed 200 OK in 119ms (Views: 38.8ms | ActiveRecord: 59.3ms)
+
+
+Started GET "/flights/23" for ::1 at 2022-02-16 16:58:19 +1100
+Processing by FlightsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mFlight Load (50.6ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/flights_controller.rb:14
+Completed 404 Not Found in 1017ms (ActiveRecord: 127.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Flight with 'id'=23):
+  
+app/controllers/flights_controller.rb:14:in `show'
+>>>>>>> 02584520949ca5564f2f338abfc2f31496dfe064
