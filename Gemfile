@@ -54,3 +54,4 @@ end
 
 gem 'pry-rails'
 gem 'colorize'
+gem 'rack-cors'
