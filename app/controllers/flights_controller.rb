@@ -7,7 +7,7 @@ class FlightsController < ApplicationController
         render json: Flight.all
 
     end # index
-    
+
 
     def show
         headers['Access-Control-Allow-Origin'] = '*'
@@ -22,20 +22,22 @@ class FlightsController < ApplicationController
 
 
     def search
-        @origin = Flight.where origin: params[:origin]
-        response = {origin: @origin}
+        @flight = Flight.where origin: params[:origin], destination: params[:destination]
+        # @destination = Flight
+        response = {origin: @flight}
         render json: response 
     end
 
-    # def create
-    #     flight = Flight.create content: params[:content]
-    
-    #     if flight.persisted?
-    #        render json:flight
-    #     else
-    #        render json: {error: 'could not create flight'}, status: 422
-    #     end
-    
-    # end # create
+    def create
+  
+        flight = Flight.create! airplane_id: params[:airplane_id], origin: params[:origin], destination: params[:destination], date: params[:date]
+
+        if flight.persisted?
+            render json: flight
+        else
+            render json: { error: 'could not create secret!', status: 422 }
+        end
+
+    end
 
 end
