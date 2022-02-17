@@ -7,7 +7,7 @@ class FlightsController < ApplicationController
         render json: Flight.all
 
     end # index
-
+    
 
     def show
         headers['Access-Control-Allow-Origin'] = '*'
@@ -17,6 +17,14 @@ class FlightsController < ApplicationController
         response = {flight: @flight, reservation: @reservation, plane: @plane}
         render json: response
 
+    end
+
+
+
+    def search
+        @origin = Flight.where origin: params[:origin]
+        response = {origin: @origin}
+        render json: response 
     end
 
     # def create
