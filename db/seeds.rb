@@ -33,6 +33,7 @@ Flight.destroy_all
 origins = ['Sydney', 'Melbourne', 'Brisbane', 'Perth', 'Canberra']
 destinations = ['Washington DC', 'Birmingham', 'Paris', 'Berlin', 'Beirut']
 flight_array = []
+date_array = [Date.new(2022,02,18), Date.new(2022,03,20), Date.new(2022,02,25), Date.new(2022,02,19), Date.new(2022,02,20)]
 
 15.times do |i|
   
@@ -43,7 +44,7 @@ flight_array = []
   randomFlight.seats = Airplane.where(id:randomFlight.airplane_id).first.rows * Airplane.where(id:randomFlight.airplane_id).first.columns
   randomFlight.origin = origins.sample
   randomFlight.destination = destinations.sample
-  randomFlight.date = Date.new(2022,02,18)
+  randomFlight.date = date_array.sample
   randomFlight.save
 
   flight_array.push randomFlight.id

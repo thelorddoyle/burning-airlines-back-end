@@ -4,14 +4,14 @@ class FlightsController < ApplicationController
 
     def index
         headers['Access-Control-Allow-Origin'] = '*' # FIX CORS ERROR !!!
-        render json: Flight.all
+        render json: Flight.all.order(:date)
 
     end # index
 
 
     def show
         headers['Access-Control-Allow-Origin'] = '*'
-        @flight = Flight.find params[:id]
+        @flight = Flight.find(params[:id]).order(:date)
         @reservation = Reservation.all.where(flight_id: (params[:id]))
         @plane = Airplane.find_by id:@flight.airplane_id
         response = {flight: @flight, reservation: @reservation, plane: @plane}
@@ -22,7 +22,7 @@ class FlightsController < ApplicationController
 
 
     def search
-        @flight = Flight.where origin: params[:origin], destination: params[:destination]
+        @flight = Flight.where(origin: params[:origin], destination: params[:destination]).order(:date)
         # @destination = Flight
         response = {origin: @flight}
         render json: response 
