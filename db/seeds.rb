@@ -43,6 +43,7 @@ flight_array = []
   randomFlight.seats = Airplane.where(id:randomFlight.airplane_id).first.rows * Airplane.where(id:randomFlight.airplane_id).first.columns
   randomFlight.origin = origins.sample
   randomFlight.destination = destinations.sample
+  randomFlight.date = Date.new(2022,02,18)
   randomFlight.save
 
   flight_array.push randomFlight.id
