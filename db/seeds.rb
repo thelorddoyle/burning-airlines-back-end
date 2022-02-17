@@ -57,6 +57,8 @@ print "Creating seed users...".green
 User.destroy_all
 
 user1 = User.create! name: 'admin', is_admin: true
+user2 = User.create! name: 'Luke', is_admin: false
+user3 = User.create! name: 'Ro', is_admin: false
 
 puts "#{ User.count } users created.".green
 
