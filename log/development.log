@@ -47115,6 +47115,9 @@ Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 3.3ms)
   [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mFlight Load (0.6ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mAirplane Load (1.2ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" WHERE "airplanes"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+<<<<<<< HEAD
+  [1m[36mFlight Load (4.5ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" WHERE "flights"."origin" = $1 LIMIT $2[0m  [["origin", "Brisbane"], ["LIMIT", 1]]
+=======
 >>>>>>> 5425ba82ec9f2b383ced083e9b95e84a8039a6b9
 Started GET "/flights" for ::1 at 2022-02-17 10:20:57 +1100
   [1m[35m (6.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -50235,6 +50238,7 @@ Processing by FlightsController#index as HTML
 Completed 200 OK in 154ms (Views: 74.9ms | ActiveRecord: 41.1ms)
 
 
+<<<<<<< HEAD
 Started GET "/flights" for 127.0.0.1 at 2022-02-17 11:30:18 +1100
   [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/daniel/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.6.2/lib/active_record/log_subscriber.rb:98
@@ -54430,3 +54434,6 @@ Migrating to AddDateToFlightsTable (20220217012212)
   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reservations"[0m
   ↳ db/seeds.rb:85
   [1m[36mFlight Load (2.3ms)[0m  [1m[34mSELECT  "flights".* FROM "flights" ORDER BY "flights"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+=======
+>>>>>>> 48b8b55b3ad45a283076d03b8c2e5105db323227
+>>>>>>> 9a922d3f92fd3c75bc500f2561b5c52c46b40a55

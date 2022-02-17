@@ -7,7 +7,7 @@ class FlightsController < ApplicationController
         render json: Flight.all
 
     end # index
-
+    
 
     def show
         headers['Access-Control-Allow-Origin'] = '*'
