@@ -54437,3 +54437,4 @@ Migrating to AddDateToFlightsTable (20220217012212)
 =======
 >>>>>>> 48b8b55b3ad45a283076d03b8c2e5105db323227
 >>>>>>> 9a922d3f92fd3c75bc500f2561b5c52c46b40a55
+  [1m[36mAirplane Load (3.1ms)[0m  [1m[34mSELECT  "airplanes".* FROM "airplanes" ORDER BY "airplanes"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
